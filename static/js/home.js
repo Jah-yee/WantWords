@@ -178,7 +178,7 @@ function diagWord() {
             var description = $("#description_EC").val();
         }
         else {
-            var description = "unkown tabs";
+            var description = "unknown tabs";
         };
         $.get("/feedback/", { 'content': str+"|||"+description, 'mode': 'FBW' });
     }
@@ -215,7 +215,7 @@ function diagError(i) {
         var word = $("#tabs-4 #li"+i).text();
     }
     else {
-        var word = "unkown word";
+        var word = "unknown word";
     };
     if (getSelectedTabId%2==0) {
         var str=prompt("关于词“"+word+"”的相关错误描述：","");
